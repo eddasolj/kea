@@ -1,0 +1,116 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/******************* GENERAL *********************/
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: rgb(218, 120, 0);
+  font-size: x-large;
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+main {
+  font-family: "Krona One", sans-serif;
+  font-family: "Merriweather", serif;
+  padding: 40px;
+}
+p {
+  color: rgb(21, 20, 20);
+  font-size: small;
+  line-height: 5mm;
+  padding-bottom: 8px;
+}
+h2 {
+  font-size: large;
+  padding-top: 7px;
+  padding-bottom: 15px;
+}
+h3 {
+  font-size: medium;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+main {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+.mobile-image {
+  width: 350px;
+}
+dl {
+  margin: 20px;
+}
+
+img {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  image-resolution: 300dpi;
+}
+
+dt {
+  font-size: small;
+  font-weight: bold;
+  text-decoration: overline;
+  margin-top: 10px;
+}
+body {
+  background-color: rgb(254, 249, 242);
+}
+a {
+  text-decoration: none;
+  font-size: smaller;
+}
+/******************* MENUBAR *********************/
+
+header {
+  background-color: rgb(218, 120, 0);
+  position: sticky;
+  top: 0;
+  padding: 1rem 2rem;
+  box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  justify-content: center;
+}
+header .logo a {
+  font-size: 2rem;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.4rem;
+  gap: 30px;
+  overflow-x: auto;
+}
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #000000;
+}
+a:hover {
+  color: #252d38;
+}
+@media (max-width: 700px) {
+  header {
+    display: none;
+  }
+}
+
+/**********************************************/

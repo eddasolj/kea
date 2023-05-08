@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(215, 250, 238);
+}
+
+div {
+  width: 5%;
+  aspect-ratio: 1/1;
+  background-color: rgb(255, 0, 0);
+  margin: 1em;
+}
+
+.flyv {
+  animation-name: flyv_kf;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes flyv_kf {
+  to {
+    translate: 500%;
+  }
+}

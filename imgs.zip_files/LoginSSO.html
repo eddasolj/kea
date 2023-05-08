@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<!-- saved from url=(1228)https://assignment.itslearning.com/View.aspx?Accessibility=False&allowedhtmlcodelevel=Restricted&ApiSessionId=5d89fb9a5bf34161ab39c2cbe476c9ae&ContextRole=Learner&countrycode=DK&CustomerId=900180&educationsegment=0&email=edja0001%40stud.kea.dk&Encoding=utf8&extrauserinformationpermissions=None&FirstName=Edda+S%c3%b3l&isextensionmanager=False&itslearningenvironmentid=eu1&itslearningversion=3.137.1.653&Language=da-DK&LastName=Jakobsd%c3%b3ttir&LearningObjectId=341528268&LearningObjectInstanceId=481351606&Locale=da-DK&LocationId=5827&myfilesfunctionality=True&OlsonTimeZoneId=Europe%2fCopenhagen&openedforpreview=False&OpenedFromCourse=True&Permissions=Read%2c+Participate&personid=435809&ReadOnly=False&Role=Learner&synckey=edja0001&Use12HTimeFormat=False&UserId=151609620&UserName=edja0001&userrightsprivacy=InitiateCommunicationToMembersOfCommonCoursesAndProjects%2c+InitiateCommunicationToEmployees%2c+InitiateCommunicationToLearners%2c+InitiateCommunicationToGuests%2c+SearchForMembersOfCommonCoursesAndProjects%2c+SearchForEmployees%2c+SearchForLearners%2c+SearchForGuests%2c+CommunicateExternally&WindowsTimeZoneId=Central+European+Standard+Time&Timestamp=2023-02-07T08:32:44&Signature=70a79d6c5c9071deddc6f8bc526d0b46 -->
+<html lang="da-DK"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Referrer for IE/Edge -->
+    <meta name="referrer" content="origin"><title>
+	PageTitle.StudentView
+</title><link href="./ccl.css" rel="stylesheet">
+<link href="./assignment.css" rel="stylesheet">
+<link href="./jquery-ui-1.11.4.custom.css" rel="stylesheet">
+<script src="./jquery-1.7.1.min.js"></script>
+<script src="./jquery-ui-1.11.4.custom.min.js"></script>
+<script src="./jquery.are-you-sure.js"></script>
+<script src="./knockout-3.5.0.js"></script>
+<script src="./knockout.bindings.child.js"></script>
+<script src="./itslTop.js"></script>
+<script src="./commonControlLibrary.min.js"></script>
+<script src="./assignment.min.js"></script>
+</head>
+<body id="ctl00_MasterBody" class="" data-new-gr-c-s-check-loaded="14.1095.0" data-gr-ext-installed="">
+<form name="aspnetForm" method="post" action="https://assignment.itslearning.com/StudentView.aspx?LearningObjectId=341528268&amp;LearningObjectInstanceId=481351606&amp;MobileBrowser=NotDefined&amp;UserId=151609620" id="aspnetForm">
+<div>
+<input type="hidden" name="__ITSL_CSRF_TOKEN__" id="__ITSL_CSRF_TOKEN__" value="nMbwv8462QEEFGEJCXZyamxwb21yYW12ZTV5dGp3eDFkaWFyZ6kys79G0Txt08WSE5Wkwd4B3dEnwkXxe40VV9L+UmY6QJdljykncu4tNen3TPvjNIFYyYHzbi90kgCC4gyvIUo=">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="ECCAF300">
+</div>
+    <h1 class="ccl-pageheader h-mrl15 h-mrt5 ccl-pageheader h-hidden">
+        <span class="ccl-pageheader-title">PageTitle.StudentView</span>
+    </h1>
+    <div id="ctl00_PrintHeader" class="h-print-only"></div>
+    <div class="as-page-content">
+        
+    
+    <div id="ctl00_TopMessagePlaceHolder_FeedbackForError_C" class="ccl-feedback ccl-feedback-error h-clf " role="alert" style="display:none;">
+	<span id="ctl00_TopMessagePlaceHolder_FeedbackForError_IC" class="ili ili-exclamation-circle"></span><div id="ctl00_TopMessagePlaceHolder_FeedbackForError_MC" class="ccl-feedback-messagecontainer"><div id="ctl00_TopMessagePlaceHolder_FeedbackForError_T" style="display:inline;" class="ccl-feedback-text">Ukendt serverfejl.</div></div><button id="ctl00_TopMessagePlaceHolder_FeedbackForError_CB" style="display:none;" class="ccl-feedback-closeimage" type="button" title="Luk" aria-label="Luk"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" role="presentation"><path d="M6.71 6L11.85.86c.2-.19.2-.51 0-.7-.19-.2-.51-.2-.7 0L6 5.29.87.15c-.2-.2-.52-.2-.71 0-.2.19-.2.51 0 .7l5.13 5.14-5.14 5.13c-.2.2-.2.52 0 .71.09.1.22.15.35.15.13 0 .26-.05.35-.15L6 6.7l5.15 5.15c.09.1.22.15.35.15.13 0 .26-.05.35-.15.2-.19.2-.51 0-.7L6.71 6z" fill="#757575" fill-rule="evenodd"></path></svg></button><div id="ctl00_TopMessagePlaceHolder_FeedbackForError_SMLLC" class="ccl-feedback-showmorelesslinkcontainer"><button id="ctl00_TopMessagePlaceHolder_FeedbackForError_SML" class="ccl-feedback-showmorelink" type="button" style="display:none;" aria-label="Vis flere">Vis flere</button><button id="ctl00_TopMessagePlaceHolder_FeedbackForError_SLL" class="ccl-feedback-showlesslink" type="button" style="display:none;" aria-label="Vis færre">Vis færre</button></div>
+</div>
+    
+
+        
+        <div class="">
+            
+    <section id="ctl00_Content_PreviewDialog" tabindex="-1" role="dialog" aria-modal="true" class="ccl-cssmodal ccl-cssmodal-visualstyle-benevolent" style="z-index:1;" aria-labelledby="ctl00_Content_PreviewDialog_ctl00 ctl00_Content_PreviewDialog_ctl03"><div id="ctl00_Content_PreviewDialog_ctl00" class="ccl-cssmodal-modal-inner">
+	<section class="ccl-cssmodal-mobile-toolbar"><div id="ctl00_Content_PreviewDialog_ctl02_C" class="ccl-gridtoolbar"><ul class="itemsleft"><li><button type="button" class="ccl-cssmodal-modal-close ccl-cssmodal-modal-close-mobile"><span>Luk</span></button></li></ul></div></section><header id="ctl00_Content_PreviewDialog_ctl03" class="ccl-cssmodal-modal-header">
+            <h2>Vis den vedhæftede fil</h2>
+        </header><div id="ctl00_Content_PreviewDialog_ctl05" class="ccl-cssmodal-modal-content"></div><button type="button" class="ccl-cssmodal-modal-close"><svg viewBox="0 0 18 18" role="presentation"><path xmlns="http://www.w3.org/2000/svg" d="M1.684.002c-.428 0-.856.162-1.18.484a1.674 1.674 0 0 0-.002 2.358L6.641 8.99.488 15.125a1.674 1.674 0 0 0-.002 2.357 1.667 1.667 0 0 0 2.358.002l6.154-6.134 6.154 6.162a1.668 1.668 0 0 0 2.358.002c.648-.646.65-1.71.004-2.358l-6.155-6.16 6.153-6.135c.648-.646.648-1.71.002-2.357A1.675 1.675 0 0 0 15.156.5L9.002 6.637 2.862.488A1.662 1.662 0 0 0 1.683.002z"></path></svg><span class="ccl-cssmodal-modal-close-screenreader">Luk</span></button>
+</div></section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div data-onboarding-step="get-started"></div>
+    <div class="h-box ccl-ext-item h-mrb10" data-onboarding-step="edit-assignment">
+	
+        
+            <div>
+                <h2 class="h-dsp-ib">
+                    Afleveringsopgave
+                </h2>
+                <span class="h-mrl20 ccl-iconlink"><img src="./element_file24.png" alt="" style="height:24px;width:24px;border-width:0px;"><span class="as-extra-info">4 filer</span></span>
+            </div>
+            <div id="ctl00_Content_IntroductionSectionContent">
+		
+                
+                    <div class="h-userinput h-mrt10">
+                        <p><span id="cke_bm_165S" style="">&nbsp;</span>&nbsp;</p>
+<table style="border:none;border-collapse:collapse;">
+ <colgroup>
+  <col width="160">
+  <col width="560">
+ </colgroup>
+ <tbody>
+  <tr style="height:52pt;">
+   <td style="border-left:solid #000000 2.25pt;border-right:solid #ffffff 1pt;border-bottom:solid #000000 2.25pt;border-top:solid #000000 2.25pt;background-color:#f47920;padding:5pt 5pt 5pt 5pt;overflow:hidden;">
+   <p dir="ltr" style="line-height:1.2;margin-right:7pt;text-align:center;margin-top:10pt;margin-bottom:0pt;">&nbsp;</p>
+   </td>
+   <td style="border-left:solid #ffffff 1pt;border-right:solid #000000 2.25pt;border-bottom:solid #000000 2.25pt;border-top:solid #000000 2.25pt;padding:5pt 5pt 5pt 5pt;overflow:hidden;">
+   <p dir="ltr" style="line-height:1.32;margin-left:7pt;margin-right:7pt;margin-top:0pt;margin-bottom:0pt;"><b style="font-weight:normal;"><span style="font-size:20pt;font-family:Arial;color:#999999;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;white-space:pre;white-space:pre-wrap;">Grundlæggende HTML og CSS&nbsp;</span></b></p>
+   <p dir="ltr" style="line-height:1.38;margin-left:7pt;margin-right:7pt;margin-top:0pt;margin-bottom:0pt;"><b style="font-weight:normal;"><span style="font-size:16pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;white-space:pre;white-space:pre-wrap;">Opgave: Sæt indhold i HTML</span></b></p>
+   </td>
+  </tr>
+ </tbody>
+</table>
+<h1 dir="ltr" style="line-height:1.2;margin-top:20pt;margin-bottom:0pt;"><b style="font-weight:normal;"><span style="font-size:18pt;color:#f47920;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:underline;white-space:pre;white-space:pre-wrap;">Opgaveformulering:</span></b></h1>
+<p><br>
+Du skal opbygge den første version af dit website: en grundstruktur med undersider og navigationsmenu.&nbsp;</p>
+<p><br>
+​Vi arbejder mobile-first, derfor er det mobil-versionen af dit site vi begynder med at kode.</p>
+<p>Dit mobil-site skal kodes ud fra det udleverede wireframe (er alt det der skal være i main) og layoutdiagram (se nedenfor).</p>
+<p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:10pt;"><b style="font-weight:normal;"><span style="font-size:18pt;color:#f47920;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:underline;white-space:pre;white-space:pre-wrap;">Krav:</span></b></p>
+<p>Indholdet skal være det udleveret&nbsp;billeder og tekst.</p>
+<p>Det skal ikke se pænt ud (ingen css/styling), men bare være placeret i den rigtige rækkefølge i HTML’en.&nbsp;</p>
+<p>Dine billeder skal sættes ind i den bedst mulige opløsning. Du skal IKKE ændre deres størrelse for at få det til at se pænere ud (det gør vi torsdag).</p>
+<p>Websitet skal bestå af følgende fem HTML-sider:</p>
+<ul dir="ltr">
+ <li>index.html<em> </em></li>
+ <li>min_computer.html
+ <ul>
+  <li>(Du skal bare skrive dummy indholdet, vi lave det rigtige inhold i næsteuge)</li>
+ </ul>
+ </li>
+ <li>operativsystemer.html</li>
+ <li>komponenter.html</li>
+ <li>galleri.html</li>
+</ul>
+<p>Alle siderne skal indeholde følgende elementer</p>
+<ul dir="ltr">
+ <li><strong><span style="font-family:Courier New;">&lt;header&gt;</span></strong>
+ <ul>
+  <li><em>nav (med links til øvrige sider i en unordered liste(&lt;ul&gt;))</em></li>
+ </ul>
+ </li>
+ <li><strong><span style="font-family:Courier New;">&lt;main&gt;</span></strong>
+ <ul>
+  <li><i>Her skal du indsætte indhold, overskrifter (H1, H2...), tekst (p), billeder (img)</i></li>
+ </ul>
+ </li>
+ <li><strong><span style="font-family:Courier New;">&lt;footer&gt;</span></strong>
+ <ul>
+  <li><i>Her skal du skriver noget, evt. lavet af mig (p)</i></li>
+ </ul>
+ </li>
+</ul>
+<p><img alt="" data-richtextfile-id="243115" height="509" width="500" src="./min_computer.jpg"></p>
+<p><strong>NB! </strong>Siderne skal validere.</p>
+<p>Og du skal indsætte følgende meta-tag i din &lt;head&gt;-sektion, så den ikke indekseres af søgemaskiner:</p>
+<p dir="ltr" style="line-height:1.38;margin-left:11pt;margin-right:11pt;margin-top:0pt;margin-bottom:11pt;"><span style="font-size:large;"><b style="font-weight:normal;"><span style="font-family:Arial;color:rgb(0, 0, 179);background-color:rgb(237, 245, 247);font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;white-space:pre-wrap;">&lt;meta</span><span style="font-family:Arial;color:rgb(0, 0, 0);background-color:rgb(237, 245, 247);font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;white-space:pre-wrap;"> </span><span style="font-family:Arial;color:rgb(198, 47, 23);background-color:rgb(237, 245, 247);font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;white-space:pre-wrap;">name</span><span style="font-family:Arial;color:rgb(255, 0, 0);background-color:rgb(237, 245, 247);font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;white-space:pre-wrap;">=</span><span style="font-family:Arial;color:rgb(0, 0, 0);background-color:rgb(237, 245, 247);font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;white-space:pre-wrap;">"robots" </span><span style="font-family:Arial;color:rgb(198, 47, 23);background-color:rgb(237, 245, 247);font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;white-space:pre-wrap;">content</span><span style="font-family:Arial;color:rgb(255, 0, 0);background-color:rgb(237, 245, 247);font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;white-space:pre-wrap;">=</span><span style="font-family:Arial;color:rgb(0, 0, 0);background-color:rgb(237, 245, 247);font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;white-space:pre-wrap;">"noindex"</span><span style="font-family:Arial;color:rgb(0, 0, 179);background-color:rgb(237, 245, 247);font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;white-space:pre-wrap;">&gt;</span></b></span></p>
+<h6>Læs evt. mere her: <a target="_blank" href="https://beamtic.dk/meta-nofollow-noindex-noarchive">https://beamtic.dk/meta-nofollow-noindex-noarchive</a></h6>
+<h1 dir="ltr" style="line-height:1.2;margin-top:20pt;margin-bottom:0pt;"><b style="font-weight:normal;"><span style="font-size:18pt;color:#f47920;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:underline;white-space:pre;white-space:pre-wrap;">Aflevering:</span></b></h1>
+<p>&nbsp;</p>
+<p><strong>Hvordan</strong>: Skal ikke <span style="color:rgb(51, 51, 51);font-size:16px;font-style:normal;font-weight:400;letter-spacing:normal;text-align:start;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255, 255, 255);text-decoration-style:initial;text-decoration-color:initial;float:none;">afleveres</span>, vi skal arbejde videre på det torsdag. Men I må gerne aflevere et link</p>
+<p><strong>Navngivning</strong>: index.html</p>
+<p><strong>Filstruktur</strong>: kea/02_web/01_website/indhold/index.html (+ alle undersider)</p>
+
+                    </div>
+                
+                <div class="h-mrt10">
+			
+                    
+<div id="a3e64147fa9324c18a555951ed0b2c212"><file-list params="settings: {&quot;EnableContextMenu&quot;:true,&quot;IsEnabledMakeACopyForEachStudent&quot;:false,&quot;NoInteraction&quot;:false,&quot;ShowTemplateOptions&quot;:false,&quot;DisableDownload&quot;:false,&quot;DisableEdit&quot;:true,&quot;DisableView&quot;:false,&quot;DisableRemove&quot;:true,&quot;DisableRename&quot;:true,&quot;DisableFileListControlItemClick&quot;:false,&quot;ShowGoogleLinks&quot;:false,&quot;ShowOneDriveLinks&quot;:true,&quot;DownloadEndpointUrl&quot;:&quot;/Proxy/DownloadRedirect.ashx?fileRepoId={fileRepoId}&amp;AnswerId=0&amp;LearningObjectId=341528268&amp;LearningObjectInstanceId=481351606&amp;PeerAssessmentId=0&amp;Type=1&quot;,&quot;ViewEditEndpointUrl&quot;:&quot;/mvc/Attachment/Get?FileId={fileRepoId}&amp;UniqueFileId={uniqueId}&amp;ViewOnly={viewOnly}&amp;AnswerId=0&amp;LearningObjectId=341528268&amp;LearningObjectInstanceId=481351606&amp;PeerAssessmentId=0&amp;Type=1&quot;,&quot;MimeTypesToEdit&quot;:[&quot;application/vnd.openxmlformats-officedocument.wordprocessingml.document&quot;,&quot;application/vnd.ms-word.document.12&quot;,&quot;application/vnd.oasis.opendocument.text&quot;,&quot;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&quot;,&quot;application/vnd.oasis.opendocument.spreadsheet&quot;,&quot;application/oleobject&quot;,&quot;application/vnd.openxmlformats-officedocument.presentationml.presentation&quot;,&quot;application/vnd.openxmlformats-officedocument.presentationml.slideshow&quot;,&quot;application/vnd.oasis.opendocument.presentation&quot;],&quot;MimeTypesToView&quot;:[&quot;image/gif&quot;,&quot;image/jpeg&quot;,&quot;image/pjpeg&quot;,&quot;image/png&quot;,&quot;image/x-png&quot;,&quot;image/bmp&quot;,&quot;application/x-shockwave-flash&quot;,&quot;audio/mp3&quot;,&quot;audio/mp4&quot;,&quot;audio/mpeg&quot;,&quot;audio/ogg&quot;,&quot;audio/vnd.wave&quot;,&quot;audio/webm&quot;,&quot;audio/x-m4a&quot;,&quot;audio/wav&quot;,&quot;video/mp4&quot;,&quot;video/ogg&quot;,&quot;video/quicktime&quot;,&quot;video/webm&quot;,&quot;video/x-flv&quot;,&quot;video/x-m4v&quot;,&quot;video/x-ms-wmv&quot;,&quot;application/vnd.openxmlformats-officedocument.wordprocessingml.document&quot;,&quot;application/msword&quot;,&quot;application/vnd.ms-word.document.12&quot;,&quot;application/rtf&quot;,&quot;application/vnd.oasis.opendocument.text&quot;,&quot;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&quot;,&quot;application/vnd.ms-excel&quot;,&quot;application/vnd.oasis.opendocument.spreadsheet&quot;,&quot;application/oleobject&quot;,&quot;application/vnd.openxmlformats-officedocument.presentationml.presentation&quot;,&quot;application/vnd.ms-powerpoint&quot;,&quot;application/vnd.ms-pps&quot;,&quot;application/vnd.openxmlformats-officedocument.presentationml.slideshow&quot;,&quot;application/vnd.oasis.opendocument.presentation&quot;,&quot;application/pdf&quot;,&quot;application/vnd.google-apps.document&quot;,&quot;application/vnd.google-apps.drawing&quot;,&quot;application/vnd.google-apps.file&quot;,&quot;application/vnd.google-apps.photo&quot;,&quot;application/vnd.google-apps.presentation&quot;,&quot;application/vnd.google-apps.spreadsheet&quot;,&quot;application/vnd.google-apps.jam&quot;,&quot;application/vnd.google-apps.unknown&quot;,&quot;application/rtf&quot;,&quot;text/plain&quot;,&quot;text/html&quot;,&quot;text/richtext&quot;],&quot;TemplateTokens&quot;:{&quot;FileName&quot;:&quot;{fileName}&quot;,&quot;ViewOnly&quot;:&quot;{viewOnly}&quot;,&quot;FileRepoId&quot;:&quot;{fileRepoId}&quot;,&quot;UniqueId&quot;:&quot;{uniqueId}&quot;,&quot;CustomId&quot;:&quot;{customId}&quot;,&quot;FileUrl&quot;:&quot;%7bFileUrl%7d&quot;},&quot;ShouldApplyKnockoutBindings&quot;:true,&quot;ContainerClientId&quot;:&quot;a3e64147fa9324c18a555951ed0b2c212&quot;,&quot;HtmlTagName&quot;:&quot;file-list&quot;,&quot;Translations&quot;:{&quot;Edit&quot;:&quot;Redigér&quot;,&quot;View&quot;:&quot;Vis&quot;,&quot;ViewOriginal&quot;:&quot;Se den seneste indsendte version&quot;,&quot;Rename&quot;:&quot;Omdøb&quot;,&quot;Download&quot;:&quot;Hent&quot;,&quot;Delete&quot;:&quot;Slet&quot;,&quot;WriteANewFileName&quot;:&quot;Skriv et nyt filnavn&quot;,&quot;FileListOptions&quot;:&quot;Indstillinger for filer&quot;,&quot;PreviewLoadingText&quot;:&quot;Indlæser...&quot;,&quot;PreviewCloseButtonText&quot;:&quot;Luk&quot;,&quot;TemplateOptionsMakeACopyForEachStudent&quot;:&quot;Lav en kopi til hver studerende&quot;,&quot;TemplateOptionsStudentsCanView&quot;:&quot;Studerende kan se den&quot;},&quot;Triggers&quot;:{&quot;FileItemSelected&quot;:&quot;fileitem:selected&quot;,&quot;FileItemViewActivated&quot;:&quot;fileitem:view:activated&quot;,&quot;FileItemViewOriginalActivated&quot;:&quot;fileitem:vieworiginal:activated&quot;,&quot;FileItemEditActivated&quot;:&quot;fileitem:edit:activated&quot;,&quot;FileItemDownloadActivated&quot;:&quot;fileitem:download:activated&quot;},&quot;AdditionalMimeTypesOpenedInPopup&quot;:[&quot;application/pdf&quot;],&quot;EmbedVideoMimeTypes&quot;:[&quot;video/quicktime&quot;,&quot;video/x-ms-wmv&quot;,&quot;video/x-flv&quot;,&quot;application/x-shockwave-flash&quot;,&quot;video/mp4&quot;,&quot;video/x-m4v&quot;,&quot;video/ogg&quot;,&quot;video/webm&quot;],&quot;OwasMimeTypes&quot;:[&quot;application/vnd.openxmlformats-officedocument.wordprocessingml.document&quot;,&quot;application/msword&quot;,&quot;application/vnd.ms-word.document.12&quot;,&quot;application/rtf&quot;,&quot;application/vnd.oasis.opendocument.text&quot;,&quot;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&quot;,&quot;application/vnd.ms-excel&quot;,&quot;application/vnd.oasis.opendocument.spreadsheet&quot;,&quot;application/oleobject&quot;,&quot;application/vnd.openxmlformats-officedocument.presentationml.presentation&quot;,&quot;application/vnd.ms-powerpoint&quot;,&quot;application/vnd.ms-pps&quot;,&quot;application/vnd.openxmlformats-officedocument.presentationml.slideshow&quot;,&quot;application/vnd.oasis.opendocument.presentation&quot;],&quot;GoogleMimeTypes&quot;:[&quot;application/vnd.google-apps.document&quot;,&quot;application/vnd.google-apps.drawing&quot;,&quot;application/vnd.google-apps.file&quot;,&quot;application/vnd.google-apps.photo&quot;,&quot;application/vnd.google-apps.presentation&quot;,&quot;application/vnd.google-apps.spreadsheet&quot;,&quot;application/vnd.google-apps.jam&quot;,&quot;application/vnd.google-apps.unknown&quot;],&quot;DisableTemplateOptions&quot;:false,&quot;DisableOriginal&quot;:false,&quot;MimeTypesToEditFromGoogleDrive&quot;:[&quot;application/vnd.google-apps.document&quot;,&quot;application/vnd.google-apps.drawing&quot;,&quot;application/vnd.google-apps.presentation&quot;,&quot;application/vnd.google-apps.spreadsheet&quot;,&quot;application/vnd.google-apps.jam&quot;],&quot;MimeTypesToTemplateFromUpload&quot;:[&quot;application/pdf&quot;,&quot;application/vnd.openxmlformats-officedocument.wordprocessingml.document&quot;,&quot;application/vnd.ms-word.document.12&quot;,&quot;application/vnd.oasis.opendocument.text&quot;,&quot;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&quot;,&quot;application/vnd.oasis.opendocument.spreadsheet&quot;,&quot;application/oleobject&quot;,&quot;application/vnd.openxmlformats-officedocument.presentationml.presentation&quot;,&quot;application/vnd.openxmlformats-officedocument.presentationml.slideshow&quot;,&quot;application/vnd.oasis.opendocument.presentation&quot;],&quot;PreviewDialogInstanceName&quot;:&quot;ctl00_Content_PreviewDialog&quot;,&quot;ShouldTriggerItemSelected&quot;:false,&quot;ShouldTriggerItemViewActivated&quot;:false,&quot;ShouldTriggerItemEditActivated&quot;:false,&quot;ShouldTriggerItemDownloadActivated&quot;:false,&quot;UsePreviewSettingsUrlToView&quot;:true,&quot;IntermediatePageUrl&quot;:&quot;https://kea-fronter.itslearning.com/LearningToolElement/ViewLearningToolElement.aspx?LearningToolElementId=1098805&amp;ExtraQueryParams=%7b%22RedirectUrl%22%3a%22%7bFileUrl%7d%22%2c%22ReplaceTopFrame%22%3a%22True%22%7d&amp;DoNotConvertToTopFrameLink&quot;}, files: [{&quot;Name&quot;:&quot;layoutdiagram.png&quot;,&quot;MimeType&quot;:null,&quot;IsFileInCloud&quot;:false,&quot;IsViewableInOfficeOnline&quot;:false,&quot;Metadata&quot;:{&quot;PlagiarismReportUrl&quot;:null,&quot;id&quot;:&quot;7371c8fc-ff1a-48e9-b7ec-b3b86ae5811f&quot;,&quot;name&quot;:&quot;layoutdiagram.png&quot;,&quot;sourceType&quot;:4,&quot;mimeType&quot;:&quot;image/png&quot;,&quot;OriginalFileId&quot;:null,&quot;signedFileRepoId&quot;:&quot;/Mhxcxr/6Ui37LO4auWBH//EWfoz6vQsX3wvb6kqBHOhchlC8QMwPlvjt6vG7Alr&quot;,&quot;signature&quot;:null,&quot;isTemplate&quot;:false},&quot;PreviewSettings&quot;:{&quot;Type&quot;:3,&quot;Url&quot;:&quot;/mvc/Attachment/Get?FileId=%2fMhxcxr%2f6Ui37LO4auWBH%2f%2fEWfoz6vQsX3wvb6kqBHOhchlC8QMwPlvjt6vG7Alr&amp;UniqueFileId=7371c8fc-ff1a-48e9-b7ec-b3b86ae5811f&amp;ViewOnly=True&amp;AnswerId=0&amp;LearningObjectId=341528268&amp;LearningObjectInstanceId=481351606&amp;PeerAssessmentId=0&amp;Type=1&quot;,&quot;DialogWidth&quot;:0,&quot;DialogHeight&quot;:0,&quot;DialogMaximised&quot;:false},&quot;RightSideCustomHtml&quot;:&quot;&lt;div class=\&quot;as-fl-item-placeholder as-file-plagiarism-report-placeholder\&quot; data-file-id=\&quot;7172939\&quot;&gt;&lt;/div&gt;&quot;,&quot;CustomContextMenuItems&quot;:null,&quot;SnapshotFileRepoSignature&quot;:null,&quot;SnapshotFileRepoId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;SnapshotFileUrl&quot;:&quot;&quot;,&quot;SnapshotFileId&quot;:null},{&quot;Name&quot;:&quot;wireframe-mobil.pptx&quot;,&quot;MimeType&quot;:null,&quot;IsFileInCloud&quot;:false,&quot;IsViewableInOfficeOnline&quot;:true,&quot;Metadata&quot;:{&quot;PlagiarismReportUrl&quot;:null,&quot;id&quot;:&quot;1d18a705-3c33-4787-84da-a1eb11d5d598&quot;,&quot;name&quot;:&quot;wireframe-mobil.pptx&quot;,&quot;sourceType&quot;:4,&quot;mimeType&quot;:&quot;application/vnd.openxmlformats-officedocument.presentationml.presentation&quot;,&quot;OriginalFileId&quot;:null,&quot;signedFileRepoId&quot;:&quot;BacYHTM8h0eE2qHrEdXVmNuf2HAKmImUeD3UTBrpWdgrcNbFJz5Af5DJ47mWHyJ5&quot;,&quot;signature&quot;:null,&quot;isTemplate&quot;:false},&quot;PreviewSettings&quot;:{&quot;Type&quot;:2,&quot;Url&quot;:&quot;/mvc/Attachment/Get?FileId=BacYHTM8h0eE2qHrEdXVmNuf2HAKmImUeD3UTBrpWdgrcNbFJz5Af5DJ47mWHyJ5&amp;UniqueFileId=1d18a705-3c33-4787-84da-a1eb11d5d598&amp;ViewOnly=True&amp;AnswerId=0&amp;LearningObjectId=341528268&amp;LearningObjectInstanceId=481351606&amp;PeerAssessmentId=0&amp;Type=1&quot;,&quot;DialogWidth&quot;:0,&quot;DialogHeight&quot;:0,&quot;DialogMaximised&quot;:true},&quot;RightSideCustomHtml&quot;:&quot;&lt;div class=\&quot;as-fl-item-placeholder as-file-plagiarism-report-placeholder\&quot; data-file-id=\&quot;7172940\&quot;&gt;&lt;/div&gt;&quot;,&quot;CustomContextMenuItems&quot;:null,&quot;SnapshotFileRepoSignature&quot;:null,&quot;SnapshotFileRepoId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;SnapshotFileUrl&quot;:&quot;&quot;,&quot;SnapshotFileId&quot;:null},{&quot;Name&quot;:&quot;imgs.zip&quot;,&quot;MimeType&quot;:null,&quot;IsFileInCloud&quot;:false,&quot;IsViewableInOfficeOnline&quot;:false,&quot;Metadata&quot;:{&quot;PlagiarismReportUrl&quot;:null,&quot;id&quot;:&quot;5bc85066-508c-4c1f-a5e4-82b00c9d1663&quot;,&quot;name&quot;:&quot;imgs.zip&quot;,&quot;sourceType&quot;:4,&quot;mimeType&quot;:&quot;application/zip&quot;,&quot;OriginalFileId&quot;:null,&quot;signedFileRepoId&quot;:&quot;ZlDIW4xQH0yl5IKwDJ0WY4Yv+C3a4QHpHP2G1d+It2NATg0HX5Ki+bpbxuSIQ8hc&quot;,&quot;signature&quot;:null,&quot;isTemplate&quot;:false},&quot;PreviewSettings&quot;:{&quot;Type&quot;:0,&quot;Url&quot;:&quot;&quot;,&quot;DialogWidth&quot;:0,&quot;DialogHeight&quot;:0,&quot;DialogMaximised&quot;:false},&quot;RightSideCustomHtml&quot;:&quot;&lt;div class=\&quot;as-fl-item-placeholder as-file-plagiarism-report-placeholder\&quot; data-file-id=\&quot;7172941\&quot;&gt;&lt;/div&gt;&quot;,&quot;CustomContextMenuItems&quot;:null,&quot;SnapshotFileRepoSignature&quot;:null,&quot;SnapshotFileRepoId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;SnapshotFileUrl&quot;:&quot;&quot;,&quot;SnapshotFileId&quot;:null},{&quot;Name&quot;:&quot;tekster til website om computere.txt&quot;,&quot;MimeType&quot;:null,&quot;IsFileInCloud&quot;:false,&quot;IsViewableInOfficeOnline&quot;:false,&quot;Metadata&quot;:{&quot;PlagiarismReportUrl&quot;:null,&quot;id&quot;:&quot;050defa3-4c5b-4611-9a11-f36ece7194c3&quot;,&quot;name&quot;:&quot;tekster til website om computere.txt&quot;,&quot;sourceType&quot;:4,&quot;mimeType&quot;:&quot;text/plain&quot;,&quot;OriginalFileId&quot;:null,&quot;signedFileRepoId&quot;:&quot;o+8NBVtMEUaaEfNuznGUw94fj89l9+HdJ3/RITc/73PCZL/stk2fQs8DoFIQZ/Fc&quot;,&quot;signature&quot;:null,&quot;isTemplate&quot;:false},&quot;PreviewSettings&quot;:{&quot;Type&quot;:0,&quot;Url&quot;:&quot;&quot;,&quot;DialogWidth&quot;:0,&quot;DialogHeight&quot;:0,&quot;DialogMaximised&quot;:false},&quot;RightSideCustomHtml&quot;:&quot;&lt;div class=\&quot;as-fl-item-placeholder as-file-plagiarism-report-placeholder\&quot; data-file-id=\&quot;7172942\&quot;&gt;&lt;/div&gt;&quot;,&quot;CustomContextMenuItems&quot;:null,&quot;SnapshotFileRepoSignature&quot;:null,&quot;SnapshotFileRepoId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;SnapshotFileUrl&quot;:&quot;&quot;,&quot;SnapshotFileId&quot;:null}], api: api">
+                <div data-bind="foreach: { data: files, as: &#39;file&#39; }, visible: isVisible">
+                    <div class="ccl-fl-item-container">
+                        <div data-bind="css: getRowCss()" class="ccl-fl-item-row-container">
+                            <div tabindex="0" data-bind="css: getItemCss(), click: function(file, event) { onItemClick(file, event) }, clickBubble: false" class="ccl-fl-item ccl-fl-item-selectable">
+                                <div data-bind="style: {width: progress() + &#39;%&#39;},
+                                    css: isCompleted() ? &#39;ccl-fl-item-uploaded&#39; : &#39;ccl-fl-item-progress-animate&#39;,
+                                    visible: !errorMessage()" class="ccl-fl-item-uploaded" style="width: 100%;">
+                                </div>
+                                <div class="ccl-fl-item-content">
+                                    <div data-bind="css: getFileItemCss()" class="ccl-fl-item-details ccl-fl-item-details-image-file-icon">
+                                        <form data-bind="css: getFormCssClasses(), submit: renameFile, visible: isRenaming()" class="ccl-fl-item-details-form" style="display: none;">
+                                            <label data-bind="attr: { for: &#39;ccl-fl-item-&#39; + $index() }, text: $parent.settings.Translations.WriteANewFileName" style="display: none" for="ccl-fl-item-0">Skriv et nyt filnavn</label>
+                                            <input type="text" data-bind="attr: { id: &#39;ccl-fl-item-&#39; + $index(), placeholder: $parent.settings.Translations.WriteANewFileName }, hasFocus: isRenaming,  textInput: fileName, click: function() { }, clickBubble: false" id="ccl-fl-item-0" placeholder="Skriv et nyt filnavn">
+                                        </form>
+                                        <span data-bind="text: fileName, css: getFileNameCss(), visible: !isRenaming()" class="ccl-fl-item-details-text-file-name-uploaded">layoutdiagram</span>
+                                        <span data-bind="visible: fileExtension() &amp;&amp; !isRenaming(), text: getFileExtensionText, css: getFileExtensionCss()" class="ccl-fl-item-details-text-file-extension-uploaded">.png</span>
+                                    </div>
+                                    <div data-bind="visible: !isRenaming()">
+                                        <div class="ccl-fl-item-actions">
+                                            <!-- ko template: { nodes: $componentTemplateNodes, data: { file: file, settings: $parent.settings }, if: $parent.settings.EnableContextMenu && !$parent.settings.NoInteraction} --><file-item-context-menu params="file: $data.file, settings: $data.settings">
+            <div class="ccl-fl-context-menu" data-bind="
+                visible: isAnyOperationAvailable,
+                event: { keydown: onKeyDown }
+            ">
+                <button type="button" class="ccl-fl-context-menu-ellipsis" data-bind="
+                    attr: {&#39;aria-label&#39;: settings.Translations.FileListOptions},
+                    click: toggleContextMenu,
+                    clickBubble: false,
+                    css: { &#39;ccl-fl-context-menu-ellipsis-active&#39;: isContextMenuDisplayed }
+                " aria-label="Indstillinger for filer">
+                    <span class="ili ili-h-ellipsis"></span>
+                </button>
+                <div class="ccl-fl-context-menu-dialog" data-bind="visible: isContextMenuDisplayed" style="display: none;">
+                    <div class="ccl-fl-context-menu-dialog-content" data-bind="foreach: { data: items, as: &#39;item&#39; }">
+                        <button type="button" class="ccl-fl-context-menu-dialog-content-item" tabindex="0" data-bind="click: item.Action, clickBubble: false, text: item.Text">Vis</button>
+                    
+                        <button type="button" class="ccl-fl-context-menu-dialog-content-item" tabindex="0" data-bind="click: item.Action, clickBubble: false, text: item.Text">Hent</button>
+                    </div>
+                </div>
+            </div>
+        </file-item-context-menu><!-- /ko -->
+                                    <div data-bind="visible: !$parent.settings.DisableRemove &amp;&amp; isRemoveAllowed() &amp;&amp; !(isFileTemplate() &amp;&amp; $parent.settings.DisableTemplateOptions)" style="display: none;">
+                                                <button data-bind="click: function() { $parent.removeFile(file) }, css: getRemoveButtonCss(), attr: { &#39;aria-label&#39;: $parent.settings.Translations.Delete }" class="ccl-fl-item-remove-enabled" aria-label="Slet"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ccl-fl-item-template-options" data-bind="visible: $parent.showTemplateOptionsInFilelist &amp;&amp; showTemplateOptionsForItem(), css: disableTemplateOptionsForItem() ? &#39;disabled&#39; : &#39;&#39;" style="display: none;">
+                                <templateoptions-dropdown params="file: $data, settings: $parent.settings"></templateoptions-dropdown>
+                            </div>
+
+                            <div class="ccl-fl-warning" data-bind="visible: warningMessage()" style="display: none;">
+                                <div class="ili ili-exclamation-circle ccl-fl-warning-exclamation-circle" aria-hidden="true"></div>
+                                <div class="ccl-fl-warning-message" data-bind="text: warningMessage"></div>
+                            </div>
+
+                            <div class="ccl-fl-item-right-placeholder" data-bind="visible: rightSideCustomHtml(), html: rightSideCustomHtml"><div class="as-fl-item-placeholder as-file-plagiarism-report-placeholder" data-file-id="7172939"></div></div>
+                        </div>
+                        <div class="ccl-fl-error" data-bind="visible: errorMessage()" style="display: none;">
+                            <div class="ccl-fl-error-message" data-bind="text: errorMessage"></div>
+                        </div>
+                    </div>
+                
+                    <div class="ccl-fl-item-container">
+                        <div data-bind="css: getRowCss()" class="ccl-fl-item-row-container">
+                            <div tabindex="0" data-bind="css: getItemCss(), click: function(file, event) { onItemClick(file, event) }, clickBubble: false" class="ccl-fl-item ccl-fl-item-selectable">
+                                <div data-bind="style: {width: progress() + &#39;%&#39;},
+                                    css: isCompleted() ? &#39;ccl-fl-item-uploaded&#39; : &#39;ccl-fl-item-progress-animate&#39;,
+                                    visible: !errorMessage()" class="ccl-fl-item-uploaded" style="width: 100%;">
+                                </div>
+                                <div class="ccl-fl-item-content">
+                                    <div data-bind="css: getFileItemCss()" class="ccl-fl-item-details ccl-fl-item-details-presentation-file-icon">
+                                        <form data-bind="css: getFormCssClasses(), submit: renameFile, visible: isRenaming()" class="ccl-fl-item-details-form" style="display: none;">
+                                            <label data-bind="attr: { for: &#39;ccl-fl-item-&#39; + $index() }, text: $parent.settings.Translations.WriteANewFileName" style="display: none" for="ccl-fl-item-1">Skriv et nyt filnavn</label>
+                                            <input type="text" data-bind="attr: { id: &#39;ccl-fl-item-&#39; + $index(), placeholder: $parent.settings.Translations.WriteANewFileName }, hasFocus: isRenaming,  textInput: fileName, click: function() { }, clickBubble: false" id="ccl-fl-item-1" placeholder="Skriv et nyt filnavn">
+                                        </form>
+                                        <span data-bind="text: fileName, css: getFileNameCss(), visible: !isRenaming()" class="ccl-fl-item-details-text-file-name-uploaded">wireframe-mobil</span>
+                                        <span data-bind="visible: fileExtension() &amp;&amp; !isRenaming(), text: getFileExtensionText, css: getFileExtensionCss()" class="ccl-fl-item-details-text-file-extension-uploaded">.pptx</span>
+                                    </div>
+                                    <div data-bind="visible: !isRenaming()">
+                                        <div class="ccl-fl-item-actions">
+                                            <!-- ko template: { nodes: $componentTemplateNodes, data: { file: file, settings: $parent.settings }, if: $parent.settings.EnableContextMenu && !$parent.settings.NoInteraction} --><file-item-context-menu params="file: $data.file, settings: $data.settings">
+            <div class="ccl-fl-context-menu" data-bind="
+                visible: isAnyOperationAvailable,
+                event: { keydown: onKeyDown }
+            ">
+                <button type="button" class="ccl-fl-context-menu-ellipsis" data-bind="
+                    attr: {&#39;aria-label&#39;: settings.Translations.FileListOptions},
+                    click: toggleContextMenu,
+                    clickBubble: false,
+                    css: { &#39;ccl-fl-context-menu-ellipsis-active&#39;: isContextMenuDisplayed }
+                " aria-label="Indstillinger for filer">
+                    <span class="ili ili-h-ellipsis"></span>
+                </button>
+                <div class="ccl-fl-context-menu-dialog" data-bind="visible: isContextMenuDisplayed" style="display: none;">
+                    <div class="ccl-fl-context-menu-dialog-content" data-bind="foreach: { data: items, as: &#39;item&#39; }">
+                        <button type="button" class="ccl-fl-context-menu-dialog-content-item" tabindex="0" data-bind="click: item.Action, clickBubble: false, text: item.Text">Vis</button>
+                    
+                        <button type="button" class="ccl-fl-context-menu-dialog-content-item" tabindex="0" data-bind="click: item.Action, clickBubble: false, text: item.Text">Hent</button>
+                    </div>
+                </div>
+            </div>
+        </file-item-context-menu><!-- /ko -->
+                                    <div data-bind="visible: !$parent.settings.DisableRemove &amp;&amp; isRemoveAllowed() &amp;&amp; !(isFileTemplate() &amp;&amp; $parent.settings.DisableTemplateOptions)" style="display: none;">
+                                                <button data-bind="click: function() { $parent.removeFile(file) }, css: getRemoveButtonCss(), attr: { &#39;aria-label&#39;: $parent.settings.Translations.Delete }" class="ccl-fl-item-remove-enabled" aria-label="Slet"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ccl-fl-item-template-options" data-bind="visible: $parent.showTemplateOptionsInFilelist &amp;&amp; showTemplateOptionsForItem(), css: disableTemplateOptionsForItem() ? &#39;disabled&#39; : &#39;&#39;" style="display: none;">
+                                <templateoptions-dropdown params="file: $data, settings: $parent.settings"></templateoptions-dropdown>
+                            </div>
+
+                            <div class="ccl-fl-warning" data-bind="visible: warningMessage()" style="display: none;">
+                                <div class="ili ili-exclamation-circle ccl-fl-warning-exclamation-circle" aria-hidden="true"></div>
+                                <div class="ccl-fl-warning-message" data-bind="text: warningMessage"></div>
+                            </div>
+
+                            <div class="ccl-fl-item-right-placeholder" data-bind="visible: rightSideCustomHtml(), html: rightSideCustomHtml"><div class="as-fl-item-placeholder as-file-plagiarism-report-placeholder" data-file-id="7172940"></div></div>
+                        </div>
+                        <div class="ccl-fl-error" data-bind="visible: errorMessage()" style="display: none;">
+                            <div class="ccl-fl-error-message" data-bind="text: errorMessage"></div>
+                        </div>
+                    </div>
+                
+                    <div class="ccl-fl-item-container">
+                        <div data-bind="css: getRowCss()" class="ccl-fl-item-row-container">
+                            <div tabindex="0" data-bind="css: getItemCss(), click: function(file, event) { onItemClick(file, event) }, clickBubble: false" class="ccl-fl-item ccl-fl-item-selectable">
+                                <div data-bind="style: {width: progress() + &#39;%&#39;},
+                                    css: isCompleted() ? &#39;ccl-fl-item-uploaded&#39; : &#39;ccl-fl-item-progress-animate&#39;,
+                                    visible: !errorMessage()" class="ccl-fl-item-uploaded" style="width: 100%;">
+                                </div>
+                                <div class="ccl-fl-item-content">
+                                    <div data-bind="css: getFileItemCss()" class="ccl-fl-item-details ccl-fl-item-details-archive-file-icon">
+                                        <form data-bind="css: getFormCssClasses(), submit: renameFile, visible: isRenaming()" class="ccl-fl-item-details-form" style="display: none;">
+                                            <label data-bind="attr: { for: &#39;ccl-fl-item-&#39; + $index() }, text: $parent.settings.Translations.WriteANewFileName" style="display: none" for="ccl-fl-item-2">Skriv et nyt filnavn</label>
+                                            <input type="text" data-bind="attr: { id: &#39;ccl-fl-item-&#39; + $index(), placeholder: $parent.settings.Translations.WriteANewFileName }, hasFocus: isRenaming,  textInput: fileName, click: function() { }, clickBubble: false" id="ccl-fl-item-2" placeholder="Skriv et nyt filnavn">
+                                        </form>
+                                        <span data-bind="text: fileName, css: getFileNameCss(), visible: !isRenaming()" class="ccl-fl-item-details-text-file-name-uploaded">imgs</span>
+                                        <span data-bind="visible: fileExtension() &amp;&amp; !isRenaming(), text: getFileExtensionText, css: getFileExtensionCss()" class="ccl-fl-item-details-text-file-extension-uploaded">.zip</span>
+                                    </div>
+                                    <div data-bind="visible: !isRenaming()">
+                                        <div class="ccl-fl-item-actions">
+                                            <!-- ko template: { nodes: $componentTemplateNodes, data: { file: file, settings: $parent.settings }, if: $parent.settings.EnableContextMenu && !$parent.settings.NoInteraction} --><file-item-context-menu params="file: $data.file, settings: $data.settings">
+            <div class="ccl-fl-context-menu" data-bind="
+                visible: isAnyOperationAvailable,
+                event: { keydown: onKeyDown }
+            ">
+                <button type="button" class="ccl-fl-context-menu-ellipsis" data-bind="
+                    attr: {&#39;aria-label&#39;: settings.Translations.FileListOptions},
+                    click: toggleContextMenu,
+                    clickBubble: false,
+                    css: { &#39;ccl-fl-context-menu-ellipsis-active&#39;: isContextMenuDisplayed }
+                " aria-label="Indstillinger for filer">
+                    <span class="ili ili-h-ellipsis"></span>
+                </button>
+                <div class="ccl-fl-context-menu-dialog" data-bind="visible: isContextMenuDisplayed" style="display: none;">
+                    <div class="ccl-fl-context-menu-dialog-content" data-bind="foreach: { data: items, as: &#39;item&#39; }">
+                        <button type="button" class="ccl-fl-context-menu-dialog-content-item" tabindex="0" data-bind="click: item.Action, clickBubble: false, text: item.Text">Hent</button>
+                    </div>
+                </div>
+            </div>
+        </file-item-context-menu><!-- /ko -->
+                                    <div data-bind="visible: !$parent.settings.DisableRemove &amp;&amp; isRemoveAllowed() &amp;&amp; !(isFileTemplate() &amp;&amp; $parent.settings.DisableTemplateOptions)" style="display: none;">
+                                                <button data-bind="click: function() { $parent.removeFile(file) }, css: getRemoveButtonCss(), attr: { &#39;aria-label&#39;: $parent.settings.Translations.Delete }" class="ccl-fl-item-remove-enabled" aria-label="Slet"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ccl-fl-item-template-options" data-bind="visible: $parent.showTemplateOptionsInFilelist &amp;&amp; showTemplateOptionsForItem(), css: disableTemplateOptionsForItem() ? &#39;disabled&#39; : &#39;&#39;" style="display: none;">
+                                <templateoptions-dropdown params="file: $data, settings: $parent.settings"></templateoptions-dropdown>
+                            </div>
+
+                            <div class="ccl-fl-warning" data-bind="visible: warningMessage()" style="display: none;">
+                                <div class="ili ili-exclamation-circle ccl-fl-warning-exclamation-circle" aria-hidden="true"></div>
+                                <div class="ccl-fl-warning-message" data-bind="text: warningMessage"></div>
+                            </div>
+
+                            <div class="ccl-fl-item-right-placeholder" data-bind="visible: rightSideCustomHtml(), html: rightSideCustomHtml"><div class="as-fl-item-placeholder as-file-plagiarism-report-placeholder" data-file-id="7172941"></div></div>
+                        </div>
+                        <div class="ccl-fl-error" data-bind="visible: errorMessage()" style="display: none;">
+                            <div class="ccl-fl-error-message" data-bind="text: errorMessage"></div>
+                        </div>
+                    </div>
+                
+                    <div class="ccl-fl-item-container">
+                        <div data-bind="css: getRowCss()" class="ccl-fl-item-row-container">
+                            <div tabindex="0" data-bind="css: getItemCss(), click: function(file, event) { onItemClick(file, event) }, clickBubble: false" class="ccl-fl-item ccl-fl-item-selectable">
+                                <div data-bind="style: {width: progress() + &#39;%&#39;},
+                                    css: isCompleted() ? &#39;ccl-fl-item-uploaded&#39; : &#39;ccl-fl-item-progress-animate&#39;,
+                                    visible: !errorMessage()" class="ccl-fl-item-uploaded" style="width: 100%;">
+                                </div>
+                                <div class="ccl-fl-item-content">
+                                    <div data-bind="css: getFileItemCss()" class="ccl-fl-item-details ccl-fl-item-details-generic-file-icon">
+                                        <form data-bind="css: getFormCssClasses(), submit: renameFile, visible: isRenaming()" class="ccl-fl-item-details-form" style="display: none;">
+                                            <label data-bind="attr: { for: &#39;ccl-fl-item-&#39; + $index() }, text: $parent.settings.Translations.WriteANewFileName" style="display: none" for="ccl-fl-item-3">Skriv et nyt filnavn</label>
+                                            <input type="text" data-bind="attr: { id: &#39;ccl-fl-item-&#39; + $index(), placeholder: $parent.settings.Translations.WriteANewFileName }, hasFocus: isRenaming,  textInput: fileName, click: function() { }, clickBubble: false" id="ccl-fl-item-3" placeholder="Skriv et nyt filnavn">
+                                        </form>
+                                        <span data-bind="text: fileName, css: getFileNameCss(), visible: !isRenaming()" class="ccl-fl-item-details-text-file-name-uploaded">tekster til website om computere</span>
+                                        <span data-bind="visible: fileExtension() &amp;&amp; !isRenaming(), text: getFileExtensionText, css: getFileExtensionCss()" class="ccl-fl-item-details-text-file-extension-uploaded">.txt</span>
+                                    </div>
+                                    <div data-bind="visible: !isRenaming()">
+                                        <div class="ccl-fl-item-actions">
+                                            <!-- ko template: { nodes: $componentTemplateNodes, data: { file: file, settings: $parent.settings }, if: $parent.settings.EnableContextMenu && !$parent.settings.NoInteraction} --><file-item-context-menu params="file: $data.file, settings: $data.settings">
+            <div class="ccl-fl-context-menu" data-bind="
+                visible: isAnyOperationAvailable,
+                event: { keydown: onKeyDown }
+            ">
+                <button type="button" class="ccl-fl-context-menu-ellipsis" data-bind="
+                    attr: {&#39;aria-label&#39;: settings.Translations.FileListOptions},
+                    click: toggleContextMenu,
+                    clickBubble: false,
+                    css: { &#39;ccl-fl-context-menu-ellipsis-active&#39;: isContextMenuDisplayed }
+                " aria-label="Indstillinger for filer">
+                    <span class="ili ili-h-ellipsis"></span>
+                </button>
+                <div class="ccl-fl-context-menu-dialog" data-bind="visible: isContextMenuDisplayed" style="display: none;">
+                    <div class="ccl-fl-context-menu-dialog-content" data-bind="foreach: { data: items, as: &#39;item&#39; }">
+                        <button type="button" class="ccl-fl-context-menu-dialog-content-item" tabindex="0" data-bind="click: item.Action, clickBubble: false, text: item.Text">Hent</button>
+                    </div>
+                </div>
+            </div>
+        </file-item-context-menu><!-- /ko -->
+                                    <div data-bind="visible: !$parent.settings.DisableRemove &amp;&amp; isRemoveAllowed() &amp;&amp; !(isFileTemplate() &amp;&amp; $parent.settings.DisableTemplateOptions)" style="display: none;">
+                                                <button data-bind="click: function() { $parent.removeFile(file) }, css: getRemoveButtonCss(), attr: { &#39;aria-label&#39;: $parent.settings.Translations.Delete }" class="ccl-fl-item-remove-enabled" aria-label="Slet"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ccl-fl-item-template-options" data-bind="visible: $parent.showTemplateOptionsInFilelist &amp;&amp; showTemplateOptionsForItem(), css: disableTemplateOptionsForItem() ? &#39;disabled&#39; : &#39;&#39;" style="display: none;">
+                                <templateoptions-dropdown params="file: $data, settings: $parent.settings"></templateoptions-dropdown>
+                            </div>
+
+                            <div class="ccl-fl-warning" data-bind="visible: warningMessage()" style="display: none;">
+                                <div class="ili ili-exclamation-circle ccl-fl-warning-exclamation-circle" aria-hidden="true"></div>
+                                <div class="ccl-fl-warning-message" data-bind="text: warningMessage"></div>
+                            </div>
+
+                            <div class="ccl-fl-item-right-placeholder" data-bind="visible: rightSideCustomHtml(), html: rightSideCustomHtml"><div class="as-fl-item-placeholder as-file-plagiarism-report-placeholder" data-file-id="7172942"></div></div>
+                        </div>
+                        <div class="ccl-fl-error" data-bind="visible: errorMessage()" style="display: none;">
+                            <div class="ccl-fl-error-message" data-bind="text: errorMessage"></div>
+                        </div>
+                    </div>
+                </div></file-list></div>
+			<script>
+				
+(function() {
+    if (/complete|interactive|loaded/.test(document.readyState)) {
+        init();
+    } else {
+        document.addEventListener('DOMContentLoaded', function () {
+            init();
+        });
+    }
+           
+    function init() {
+        var fileListControl = new CCL.FileList.FileListControl({"EnableContextMenu":true,"NoInteraction":false,"IsEnabledMakeACopyForEachStudent":false,"ShowTemplateOptions":false,"DisableTemplateOptions":false,"DisableEdit":true,"DisableView":false,"DisableDownload":false,"DisableRename":true,"DisableRemove":true,"DisableFileListControlItemClick":false,"DisableOriginal":false,"ShowGoogleLinks":false,"ShowOneDriveLinks":true,"MimeTypesToView":["image/gif","image/jpeg","image/pjpeg","image/png","image/x-png","image/bmp","application/x-shockwave-flash","audio/mp3","audio/mp4","audio/mpeg","audio/ogg","audio/vnd.wave","audio/webm","audio/x-m4a","audio/wav","video/mp4","video/ogg","video/quicktime","video/webm","video/x-flv","video/x-m4v","video/x-ms-wmv","application/vnd.openxmlformats-officedocument.wordprocessingml.document","application/msword","application/vnd.ms-word.document.12","application/rtf","application/vnd.oasis.opendocument.text","application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","application/vnd.ms-excel","application/vnd.oasis.opendocument.spreadsheet","application/oleobject","application/vnd.openxmlformats-officedocument.presentationml.presentation","application/vnd.ms-powerpoint","application/vnd.ms-pps","application/vnd.openxmlformats-officedocument.presentationml.slideshow","application/vnd.oasis.opendocument.presentation","application/pdf","application/vnd.google-apps.document","application/vnd.google-apps.drawing","application/vnd.google-apps.file","application/vnd.google-apps.photo","application/vnd.google-apps.presentation","application/vnd.google-apps.spreadsheet","application/vnd.google-apps.jam","application/vnd.google-apps.unknown","application/rtf","text/plain","text/html","text/richtext"],"MimeTypesToEdit":["application/vnd.openxmlformats-officedocument.wordprocessingml.document","application/vnd.ms-word.document.12","application/vnd.oasis.opendocument.text","application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","application/vnd.oasis.opendocument.spreadsheet","application/oleobject","application/vnd.openxmlformats-officedocument.presentationml.presentation","application/vnd.openxmlformats-officedocument.presentationml.slideshow","application/vnd.oasis.opendocument.presentation"],"MimeTypesToEditFromGoogleDrive":["application/vnd.google-apps.document","application/vnd.google-apps.drawing","application/vnd.google-apps.presentation","application/vnd.google-apps.spreadsheet","application/vnd.google-apps.jam"],"MimeTypesToTemplateFromUpload":["application/pdf","application/vnd.openxmlformats-officedocument.wordprocessingml.document","application/vnd.ms-word.document.12","application/vnd.oasis.opendocument.text","application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","application/vnd.oasis.opendocument.spreadsheet","application/oleobject","application/vnd.openxmlformats-officedocument.presentationml.presentation","application/vnd.openxmlformats-officedocument.presentationml.slideshow","application/vnd.oasis.opendocument.presentation"],"OwasMimeTypes":["application/vnd.openxmlformats-officedocument.wordprocessingml.document","application/msword","application/vnd.ms-word.document.12","application/rtf","application/vnd.oasis.opendocument.text","application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","application/vnd.ms-excel","application/vnd.oasis.opendocument.spreadsheet","application/oleobject","application/vnd.openxmlformats-officedocument.presentationml.presentation","application/vnd.ms-powerpoint","application/vnd.ms-pps","application/vnd.openxmlformats-officedocument.presentationml.slideshow","application/vnd.oasis.opendocument.presentation"],"AdditionalMimeTypesOpenedInPopup":["application/pdf"],"EmbedVideoMimeTypes":["video/quicktime","video/x-ms-wmv","video/x-flv","application/x-shockwave-flash","video/mp4","video/x-m4v","video/ogg","video/webm"],"GoogleMimeTypes":["application/vnd.google-apps.document","application/vnd.google-apps.drawing","application/vnd.google-apps.file","application/vnd.google-apps.photo","application/vnd.google-apps.presentation","application/vnd.google-apps.spreadsheet","application/vnd.google-apps.jam","application/vnd.google-apps.unknown"],"DownloadEndpointUrl":"/Proxy/DownloadRedirect.ashx?fileRepoId={fileRepoId}&AnswerId=0&LearningObjectId=341528268&LearningObjectInstanceId=481351606&PeerAssessmentId=0&Type=1","ViewEditEndpointUrl":"/mvc/Attachment/Get?FileId={fileRepoId}&UniqueFileId={uniqueId}&ViewOnly={viewOnly}&AnswerId=0&LearningObjectId=341528268&LearningObjectInstanceId=481351606&PeerAssessmentId=0&Type=1","TemplateTokens":{"FileName":"{fileName}","ViewOnly":"{viewOnly}","FileRepoId":"{fileRepoId}","UniqueId":"{uniqueId}","CustomId":"{customId}","FileUrl":"%7bFileUrl%7d"},"Translations":{"Edit":"Redigér","View":"Vis","ViewOriginal":"Se den seneste indsendte version","Rename":"Omdøb","Download":"Hent","Delete":"Slet","WriteANewFileName":"Skriv et nyt filnavn","FileListOptions":"Indstillinger for filer","PreviewLoadingText":"Indlæser...","PreviewCloseButtonText":"Luk","TemplateOptionsMakeACopyForEachStudent":"Lav en kopi til hver studerende","TemplateOptionsStudentsCanView":"Studerende kan se den"},"Triggers":{"FileItemSelected":"fileitem:selected","FileItemViewActivated":"fileitem:view:activated","FileItemViewOriginalActivated":"fileitem:vieworiginal:activated","FileItemEditActivated":"fileitem:edit:activated","FileItemDownloadActivated":"fileitem:download:activated"},"ShouldApplyKnockoutBindings":true,"ContainerClientId":"a3e64147fa9324c18a555951ed0b2c212","PreviewDialogInstanceName":"ctl00_Content_PreviewDialog","ShouldTriggerItemSelected":false,"ShouldTriggerItemViewActivated":false,"ShouldTriggerItemEditActivated":false,"ShouldTriggerItemDownloadActivated":false,"UsePreviewSettingsUrlToView":true,"IntermediatePageUrl":"https://kea-fronter.itslearning.com/LearningToolElement/ViewLearningToolElement.aspx?LearningToolElementId=1098805&ExtraQueryParams=%7b%22RedirectUrl%22%3a%22%7bFileUrl%7d%22%2c%22ReplaceTopFrame%22%3a%22True%22%7d&DoNotConvertToTopFrameLink"});
+        fileListControl.initialize([{"Name":"layoutdiagram.png","MimeType":null,"IsFileInCloud":false,"IsViewableInOfficeOnline":false,"Metadata":{"PlagiarismReportUrl":null,"id":"7371c8fc-ff1a-48e9-b7ec-b3b86ae5811f","name":"layoutdiagram.png","sourceType":4,"mimeType":"image/png","OriginalFileId":null,"signedFileRepoId":"/Mhxcxr/6Ui37LO4auWBH//EWfoz6vQsX3wvb6kqBHOhchlC8QMwPlvjt6vG7Alr","signature":null,"isTemplate":false},"PreviewSettings":{"Type":3,"Url":"/mvc/Attachment/Get?FileId=%2fMhxcxr%2f6Ui37LO4auWBH%2f%2fEWfoz6vQsX3wvb6kqBHOhchlC8QMwPlvjt6vG7Alr&UniqueFileId=7371c8fc-ff1a-48e9-b7ec-b3b86ae5811f&ViewOnly=True&AnswerId=0&LearningObjectId=341528268&LearningObjectInstanceId=481351606&PeerAssessmentId=0&Type=1","DialogWidth":0,"DialogHeight":0,"DialogMaximised":false},"RightSideCustomHtml":"<div class=\"as-fl-item-placeholder as-file-plagiarism-report-placeholder\" data-file-id=\"7172939\"></div>","CustomContextMenuItems":null,"SnapshotFileRepoSignature":null,"SnapshotFileRepoId":"00000000-0000-0000-0000-000000000000","SnapshotFileUrl":"","SnapshotFileId":null},{"Name":"wireframe-mobil.pptx","MimeType":null,"IsFileInCloud":false,"IsViewableInOfficeOnline":true,"Metadata":{"PlagiarismReportUrl":null,"id":"1d18a705-3c33-4787-84da-a1eb11d5d598","name":"wireframe-mobil.pptx","sourceType":4,"mimeType":"application/vnd.openxmlformats-officedocument.presentationml.presentation","OriginalFileId":null,"signedFileRepoId":"BacYHTM8h0eE2qHrEdXVmNuf2HAKmImUeD3UTBrpWdgrcNbFJz5Af5DJ47mWHyJ5","signature":null,"isTemplate":false},"PreviewSettings":{"Type":2,"Url":"/mvc/Attachment/Get?FileId=BacYHTM8h0eE2qHrEdXVmNuf2HAKmImUeD3UTBrpWdgrcNbFJz5Af5DJ47mWHyJ5&UniqueFileId=1d18a705-3c33-4787-84da-a1eb11d5d598&ViewOnly=True&AnswerId=0&LearningObjectId=341528268&LearningObjectInstanceId=481351606&PeerAssessmentId=0&Type=1","DialogWidth":0,"DialogHeight":0,"DialogMaximised":true},"RightSideCustomHtml":"<div class=\"as-fl-item-placeholder as-file-plagiarism-report-placeholder\" data-file-id=\"7172940\"></div>","CustomContextMenuItems":null,"SnapshotFileRepoSignature":null,"SnapshotFileRepoId":"00000000-0000-0000-0000-000000000000","SnapshotFileUrl":"","SnapshotFileId":null},{"Name":"imgs.zip","MimeType":null,"IsFileInCloud":false,"IsViewableInOfficeOnline":false,"Metadata":{"PlagiarismReportUrl":null,"id":"5bc85066-508c-4c1f-a5e4-82b00c9d1663","name":"imgs.zip","sourceType":4,"mimeType":"application/zip","OriginalFileId":null,"signedFileRepoId":"ZlDIW4xQH0yl5IKwDJ0WY4Yv+C3a4QHpHP2G1d+It2NATg0HX5Ki+bpbxuSIQ8hc","signature":null,"isTemplate":false},"PreviewSettings":{"Type":0,"Url":"","DialogWidth":0,"DialogHeight":0,"DialogMaximised":false},"RightSideCustomHtml":"<div class=\"as-fl-item-placeholder as-file-plagiarism-report-placeholder\" data-file-id=\"7172941\"></div>","CustomContextMenuItems":null,"SnapshotFileRepoSignature":null,"SnapshotFileRepoId":"00000000-0000-0000-0000-000000000000","SnapshotFileUrl":"","SnapshotFileId":null},{"Name":"tekster til website om computere.txt","MimeType":null,"IsFileInCloud":false,"IsViewableInOfficeOnline":false,"Metadata":{"PlagiarismReportUrl":null,"id":"050defa3-4c5b-4611-9a11-f36ece7194c3","name":"tekster til website om computere.txt","sourceType":4,"mimeType":"text/plain","OriginalFileId":null,"signedFileRepoId":"o+8NBVtMEUaaEfNuznGUw94fj89l9+HdJ3/RITc/73PCZL/stk2fQs8DoFIQZ/Fc","signature":null,"isTemplate":false},"PreviewSettings":{"Type":0,"Url":"","DialogWidth":0,"DialogHeight":0,"DialogMaximised":false},"RightSideCustomHtml":"<div class=\"as-fl-item-placeholder as-file-plagiarism-report-placeholder\" data-file-id=\"7172942\"></div>","CustomContextMenuItems":null,"SnapshotFileRepoSignature":null,"SnapshotFileRepoId":"00000000-0000-0000-0000-000000000000","SnapshotFileUrl":"","SnapshotFileId":null}]);
+    }
+})();
+
+			</script>
+
+                
+		</div>
+                
+                
+            
+	</div>
+
+        <div class="h-mrt20">
+		
+            
+            
+            
+            
+            <a id="ctl00_Content_AnswerButton" class="ccl-button ccl-button-color-green ccl-button-submit h-no-print as-answer-button" href="https://assignment.itslearning.com/Answer.aspx?LearningObjectId=341528268&amp;LearningObjectInstanceId=481351606&amp;MobileBrowser=NotDefined&amp;UserId=151609620">Besvar opgave</a>
+        
+	</div>
+    
+</div>
+    
+
+        </div>
+    </div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+$(function() { IframeClickEventHelper.registerDocumentClickBubblingOnTop(); });
+document.addEventListener('DOMContentLoaded',
+    function() {
+        CommonFunctions.handleNavigationToAnchorsInUserInputInsideIframesResizedByTheirParents('.h-userinput');
+    }
+);$(function () { CCL.IframeContentHeightReporter.setUpIframeContentHeightReporter(); });(function () { new CCL.ConfirmDialog({"ConfirmDialogId":"ctl00_Content_ConnectConfirmDialogWarning","ConfirmButtonId":"ctl00_Content_ConnectConfirmDialogWarning_ctl05","CancelButtonId":"ctl00_Content_ConnectConfirmDialogWarning_ctl06","AlternativeButtonId":"ctl00_Content_ConnectConfirmDialogWarning_ctl07"}); })();attachOnReadySendTitleToParent();$(function() { CssModal.commonSettings = {"cssClasses":{"isActive":"is-active","content":"ccl-cssmodal-modal-content","iframe":"ccl-cssmodal-modal-iframe","inner":"ccl-cssmodal-modal-inner","overlay":"ccl-cssmodal-has-overlay","overlayIos":"ccl-cssmodal-has-overlay-ios","close":"ccl-cssmodal-modal-close","header":"ccl-cssmodal-modal-header","footer":"ccl-cssmodal-modal-footer","webkitOverflow":"ccl-modal-webkit-overflow"},"events":{"show":"cssmodal:show","hide":"cssmodal:hide"}}; CssModal.modes = {"statically":0,"iframeStatically":1,"iframeDynamically":2,"ajaxStatically":3,"ajaxDynamically":4} });
+(function(){
+var m = new CssModal('ctl00_Content_PreviewDialog');
+$(function() {
+var m_settings = {"isIos":false,"expandToAllWindowSize":true,"resizeTimeoutInMilliseconds":10,"headerCssClass":"ccl-cssmodal-modal-header","ajaxUrl":"","forceContentHeight":false,"iframeUrl":"javascript:false;","IframeAllowMedia":false,"IframeClientId":"ctl00_Content_PreviewDialog_iframe","loadingText":null,"useAdaptiveWidth":true,"preferredWidth":600,"preferredHeight":0,"useSimpleInnerFrameHeightCalculation":true,"minContentWidth":0,"minContentHeight":0,"closeButtonClass":"ccl-cssmodal-modal-close","mobileExpandedNestedContentClass":"ccl-cssmodal-mobile-expanded-nested-content","mode":4,"userInputControlsSelector":null,"iframeTitle":"","isNestedDialog":false,"addMaskToTopMenu":false,"PreventScrollingBeforeCloseDialog":false,"visualStyleBenevolent":true,"usesCrossDomainIframe":false};
+var m_customScripts =
+{
+    afterOpenDialog: undefined,
+    beforeOpenDialog: undefined,
+    beforeCloseDialog: undefined,
+    afterCloseDialog: undefined
+};
+var m_controls =
+{
+container: $('#ctl00_Content_PreviewDialog'),
+contentContainer: $('#ctl00_Content_PreviewDialog_ctl05'),
+feedbackContainer: $('#undefined'),
+headerContainer: $('#ctl00_Content_PreviewDialog_ctl03'),
+subheaderContainer: $('#undefined'),
+innerContainer: $('#ctl00_Content_PreviewDialog_ctl00'),
+footerContainer: $('#undefined')
+};
+m.initialize(m_controls, m_customScripts, m_settings);
+
+});
+})();
+
+$(function() { var k = new CCL.KeepAlive({"webMethodUrl":"/api/keepalive/v1","intervalInSeconds":1800,"errorTimeoutInSeconds":60,"maxNumberOfTries":1000,"postData":"{\"assignmentId\":341528268}","headerName":null,"headerValue":null}); });
+//]]>
+</script>
+</form>
+
+    
+    <script>
+        var connectConfirmDialogWarning;
+
+        $(function () {
+            connectConfirmDialogWarning = window["ctl00_Content_ConnectConfirmDialogWarning"];
+
+            new CCL.ButtonLoadingIndicator($("#answerButton"), "ccl-button-in-progress");
+        });
+
+        function openConnectConfirmDialogWarning(type) {
+            var messages = {
+                'GoogleDrive': {
+                    header: "Vil du knytte din Google-konto til din Fronter-konto?",
+                    content: "<strong>Hvis du knytter din Google-konto og din Fronter-konto til hinanden, behøver du ikke logge på, hver gang du tilføjer filer fra Google Drev.</strong>"
+                }
+            }
+
+            connectConfirmDialogWarning
+                .showMessage(messages[type].header, messages[type].content)
+                .then(function (dialogResult) { handleConnectDialogResult(dialogResult, type) });
+        }
+
+        function handleConnectDialogResult(dialogResult, accountType) {
+            switch (dialogResult) {
+                case CCL.ConfirmDialogResult.Confirm:
+                    {
+                        var onMessageFromPopupReceived = function () {
+                            window.location.reload();
+                        }
+
+                        var settings = {
+                            popupDomain: 'https://platform.itslearning.com',
+                            crossCommunicationProxyUrl: 'https://platform.itslearning.com/CrossCommunicationProxy.html',
+                        };
+                        switch (accountType) {
+                            case 'GoogleDrive':
+                                settings.popupUrl = 'https://platform.itslearning.com/GoogleOAuth.aspx';
+                                break;
+                            default:
+                        }
+                        var popup = new Popup(settings, new BrowserSniffer());
+                        popup.subscribe(new PopupCallback(onMessageFromPopupReceived));
+                        popup.open();
+                    }
+                    break;
+            }
+        }
+
+        $(function () {
+            var settings = {"data":{"assignmentId":341528268,"assignmentInstanceId":481351606,"isCollaborationsUsed":false,"isTemplateAnswer":false,"answerAutoSaveLocalStorageKey":"itslearning:assignmentapp:learningobjectinstance481351606:answer:ckeditor_autosave:user151609620","inProgressClass":null},"terms":{"deleteAnswerQuestion":"Er du sikker på, at du vil slette svaret?","errorOccured":null,"noInternetConnection":null,"documentLoadingTitle":null,"cancel":"Annuller","deleteButtonText":"Slet","ok":"OK"},"controls":{"deleteAnswerButton":"ctl00_Content_DeleteAnswerButton","commentModule":"ctl00_Content_CommentModule_CommentModule","answerButton":null,"feedbackForError":null},"urls":{"deleteAnswerUrl":"/api/lo/341528268/481351606/answer/","createStudentTemplateController":"/api/lo/341528268/481351606/createStudentTemplate/","answerTemplateUrl":"~/StudentView.aspx?LearningObjectId=341528268\u0026LearningObjectInstanceId=481351606\u0026MobileBrowser=NotDefined\u0026UserId=151609620"}};
+            window.StudentViewSettings = settings;
+            var page = new Assignment.StudentView(settings);
+            
+        });
+
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var answerButton = document.getElementById('answerButton');
+            if (answerButton) {
+                answerButton.onclick = onAnswerButtonClick;
+            }
+        });
+
+        function onAnswerButtonClick(event) {
+            var answerButton = document.getElementById('answerButton');
+            var removeLoadingIndicatorEvent = new Event(CCL.ButtonLoadingIndicator.eventRemoveLoadingIndicator)
+            var windowForDocument = newWindowForDocument();
+
+            let shouldPoll = 'False';
+            const maxApiCalls = shouldPoll === 'False' ? 1 : 10;
+            const apiCallFrequencyMs = 3000;
+
+            resetCreateStudentTemplateApiCall().then(()=> createStudentTemplate(0));
+
+            function createStudentTemplate(counter) {
+                createStudentTemplateApiCall()
+                    .then(function (documentUri) {
+                        if (!documentUri) {
+                            throw new Error('Retrying');
+                        }
+                        else {
+                            return documentUri
+                        }
+                    }).then(function (documentUrl) {
+                        windowForDocument.location.href = documentUrl; // Redirect the tab to the documentUrl
+                        document.location.href = "StudentView.aspx?LearningObjectId=341528268&LearningObjectInstanceId=481351606&MobileBrowser=NotDefined&UserId=151609620"; // Refresh this page to show draft
+                    }).catch(function (error) {
+                        counter++;
+                        if (counter >= maxApiCalls) {
+                            // Giving up
+                            throw ({ DisplayMessageToUser: false, ErrorMessage: 'Too many api calls' });
+                        }
+                        return new Promise(() => {
+                            setTimeout(() => {
+                                // Recurse when we don't have a result yet
+                                createStudentTemplate(counter);
+                            }, apiCallFrequencyMs);
+                        });
+                    }).catch(function (error) {
+                        createStudentTemplateError(error); // Giving up
+                    });
+            }
+
+            function createStudentTemplateError(error) {
+                answerButton.dispatchEvent(removeLoadingIndicatorEvent)
+                windowForDocument.showError(error.DisplayMessageToUser ? error.ErrorMessage : '');
+            }
+            
+            // Resets job to create student template. If it has failed many times in jobmanager, this will create a new job.
+            function resetCreateStudentTemplateApiCall() {
+                return fetch(window.StudentViewSettings.urls.createStudentTemplateController, {
+                    credentials: 'same-origin',
+                    method: 'DELETE',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'text/json; charset=utf-8',
+                        'X-Requested-With': 'XMLHttpRequest'
+                    }
+                });
+            }
+
+            // Returns document url, or null if it's not created (yet)
+            function createStudentTemplateApiCall() {
+                return fetch(window.StudentViewSettings.urls.createStudentTemplateController, {
+                    credentials: 'same-origin',
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'text/json; charset=utf-8',
+                        'X-Requested-With': 'XMLHttpRequest'
+                    }
+                }).then(function (response) {
+                    if (response.ok) {
+                        return response.json();
+                    }
+                    throw response;
+                }).then(function (responseModel) {
+                    const documentUrl = responseModel.EditUrlForStudentCopy;
+                    if (documentUrl.length === 0) {
+                        return null;
+                    }
+                    else {
+                        return documentUrl;
+                    }
+                }).catch(function (errorresponse) {
+                    errorresponse.json().then(function (error) {
+                        createStudentTemplateError(error)
+                    }).catch(function () {
+                        // nop, invalid json, most likely server down
+                    })
+                });
+            }
+        }
+
+
+        // Opens popup with loading spinner, and returns reference to it, so that we can set new URL to it once we have it.
+        function newWindowForDocument() {
+            return window.open("DocumentView.aspx?LearningObjectId=341528268&LearningObjectInstanceId=481351606&MobileBrowser=NotDefined&UserId=151609620", '_blank');
+        }
+
+        
+    </script>
+
+
+    <script>
+        $(function () {
+            var settings = {"data":{"calculateMeasureKpiEvent":"CalculateMeasureKpi","cssClasses":{"criteriaDescriptionRow":"ccl-rubric-criteria-description-row","noPrint":"h-no-print","emptyState":"ccl-rubric-criteria-empty-state","feedbackTextEditorPanel":"as-feedback-editor-panel","fieldsetPrinting":"as-fieldset-printing"}},"controls":{"printHeader":"ctl00_PrintHeader"}};
+
+            new Assignment.Master(settings);
+        });
+    </script>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/**************************** Game elements ***********************************/
+#game_elements {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#godting_container1,
+#godting_container2 {
+  width: 120px;
+  height: 220px;
+  aspect-ratio: 7/8;
+  position: absolute;
+  top: -40%;
+  bottom: 40%;
+}
+#godting_sprite1,
+#godting_sprite2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(svg/godting.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#darligting_container1,
+#darligting_container2 {
+  width: 120px;
+  height: 220px;
+  aspect-ratio: 3/4;
+  position: absolute;
+  top: -40%;
+  bottom: 40%;
+}
+
+#darligting_sprite1,
+#darligting_sprite2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(svg/darligting.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/**************************** Game ***********************************/
+#screen {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+}
+#game {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#game_background {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(svg/baggrundskærm.svg);
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+}
+#game_ui {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#start {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  background-image: url(svg/titel.svg);
+  background-repeat: no-repeat;
+  z-index: 1000;
+}
+#gameover {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  background-image: url(svg/titel.svg);
+  background-repeat: no-repeat;
+  z-index: 1000;
+}
+
+#level_complete {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  background-image: url(svg/titel.svg);
+  background-repeat: no-repeat;
+  z-index: 1000;
+}
+.hide {
+  display: none;
+}
+/************************ Text på skærm  ********************/
+
+#point {
+  color: black;
+  z-index: 0;
+  position: relative;
+}
+
+#game_over_points,
+#level_complete_points {
+  position: absolute;
+  top: 36%;
+  left: 13%;
+  font-size: 3.3cqw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#start_txt,
+#game_over_txt,
+#level_complete_txt {
+  position: absolute;
+  top: 51%;
+  left: 34%;
+  font-size: 21px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 45%;
+  text-align: center;
+}
+
+#game_over_points,
+#level_complete_points {
+  position: absolute;
+  top: 60%;
+  left: 34%;
+  font-size: 21px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 48%;
+  text-align: center;
+}
+/************************ Startknap  ********************/
+#start_knap,
+#genstart2,
+#genstart1 {
+  position: absolute;
+  top: 69%;
+  left: 49%;
+  font-size: 26px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 2%;
+  background-image: url(svg/button.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  animation-name: puls_kf;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+@keyframes puls_kf {
+  100% {
+    scale: 1.2;
+  }
+}
+/****************************** ANIMATION *********************************/
+.fald {
+  animation-name: fald_kf;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes fald_kf {
+  100% {
+    translate: 0% 1000%;
+  }
+}
+
+.drej {
+  animation-name: drej_kf;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes drej_kf {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.forsvind {
+  animation-name: forsvind_kf;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes forsvind_kf {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.frys {
+  animation-play-state: paused;
+}
+/****************************** TID *********************************/
+
+#time_container {
+  width: 5%;
+  aspect-ratio: 1/5;
+  border: solid;
+  border-color: orange;
+  margin-left: 90%;
+  margin-top: 10%;
+}
+#time_sprite {
+  width: 100%;
+  height: 100%;
+  transform-origin: bottom;
+}
+.time {
+  animation-name: time_kf;
+  animation-duration: 30s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+@keyframes time_kf {
+  0% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: orange;
+  }
+  100% {
+    scale: 1 0;
+    background-color: red;
+  }
+}
+
+/****************************** LIFE AND POINT *********************************/
+
+#life_board {
+  background-image: url(svg/liv.svg);
+  background-repeat: no-repeat;
+  aspect-ratio: 3/2;
+  width: 18%;
+  position: absolute;
+}
+#liv {
+  margin-left: 55%;
+  margin-top: 20%;
+}
+
+#score_board {
+  background-image: url(svg/point.svg);
+  background-repeat: no-repeat;
+  aspect-ratio: 3/2;
+  width: 18%;
+  left: 79%;
+  position: absolute;
+}
+#point {
+  margin-top: 20%;
+  margin-left: 19%;
+}
+
+/****************************** Position *********************************/
+
+.pos1 {
+  left: 20%;
+}
+
+.pos2 {
+  left: 25%;
+}
+
+.pos3 {
+  left: 30%;
+}
+
+.pos4 {
+  left: 40%;
+}
+.pos5 {
+  left: 50%;
+}
+
+.pos6 {
+  left: 60%;
+}
+
+.pos7 {
+  left: 70%;
+}
+
+.pos8 {
+  left: 75%;
+}
+
+.pos9 {
+  left: 80%;
+}
+
+/****************************** Speed *********************************/
+
+.speed1 {
+  animation-duration: 4s;
+}
+.speed2 {
+  animation-duration: 3s;
+}
+.speed3 {
+  animation-duration: 2.8s;
+}
+.speed4 {
+  animation-duration: 2.5s;
+}
+
+/****************************** Delay *********************************/
+
+.delay1 {
+  animation-delay: 0s;
+}
+.delay2 {
+  animation-delay: 0.3s;
+}
+.delay3 {
+  animation-delay: 0.6s;
+}
+.delay4 {
+  animation-delay: 0.9s;
+}

@@ -1,0 +1,61 @@
+* {
+  margin: 1%;
+  padding: 1%;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: rgb(218, 120, 0);
+  font-size: x-large;
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+main {
+  font-family: "Krona One", sans-serif;
+  font-family: "Merriweather", serif;
+}
+p {
+  color: rgb(21, 20, 20);
+  font-size: small;
+  line-height: 5mm;
+}
+h2 {
+  font-size: large;
+}
+h3 {
+  font-size: medium;
+}
+
+main {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+.mobile-image {
+  width: 350px;
+}
+dl {
+  padding: 1px;
+}
+
+img {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  image-resolution: 300dpi;
+}
+dl {
+  text-align: center;
+}
+dt {
+  font-size: small;
+  font-weight: bold;
+  text-decoration: overline;
+}
+body {
+  background-color: rgb(254, 249, 242);
+}
+a {
+  text-decoration: none;
+  font-size: smaller;
+}

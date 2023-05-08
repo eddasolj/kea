@@ -1,0 +1,38 @@
+/*
+.container {
+    width: 60vw;
+    border: 2px dashed green;
+}
+*/
+
+.box {
+    width: 200px;
+    height: 70px;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.static {
+    background-color: #ff1d00;
+}
+
+.fixed {
+    background-color: #ffeb00;
+    color: black;
+}
+
+.sticky {
+    background-color: #ff9ecf;
+}
+
+.relative {
+    background-color: #1fd81f;
+}
+
+.absolute {
+    background-color: #0180fc;
+}

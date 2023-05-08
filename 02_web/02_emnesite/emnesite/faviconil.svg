@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.02 228.52">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ff0a00;
+        stroke-miterlimit: 10;
+        stroke-width: 14px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: ArialMT, Arial;
+        font-size: 173.32px;
+        letter-spacing: .02em;
+      }
+
+      .cls-2, .cls-3 {
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <rect width="268.02" height="227"/>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g class="cls-3">
+      <text class="cls-2" transform="translate(22.18 172.24) rotate(-.15) scale(.96 1) skewX(-.01)"><tspan x="0" y="0">VD</tspan></text>
+      <text class="cls-2" transform="translate(22.18 172.24) rotate(-.15) scale(.96 1) skewX(-.01)"><tspan x="0" y="0">VD</tspan></text>
+    </g>
+  </g>
+  <path class="cls-1" d="m22.18,211.01l31.64-10.67c13.33-4.49,27.72-4.73,41.19-.67l17.99,5.42c12.82,3.86,26.5,3.84,39.3-.07l17.87-5.45c13.11-4,27.13-3.92,40.21.21l35.47,11.22"/>
+  <path class="cls-1" d="m245.85,8.58l-31.62,10.74c-13.32,4.52-27.71,4.79-41.19.76l-18-5.38c-12.83-3.83-26.51-3.78-39.3.15l-17.86,5.49c-13.11,4.03-27.13,3.98-40.21-.13L22.18,9.06"/>
+</svg>

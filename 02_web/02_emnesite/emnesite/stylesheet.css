@@ -1,0 +1,150 @@
+/******************* MENUBAR *********************/
+
+header {
+  background-color: rgb(0, 0, 0);
+  position: sticky;
+  top: 0;
+  padding: 1rem 2rem;
+  box-shadow: 0 12px 28px 0 rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 150%;
+}
+header .logo a {
+  font-size: 2rem;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.4rem;
+  gap: 30px;
+  overflow-x: auto;
+}
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #ffffff;
+}
+a:hover {
+  color: red;
+}
+
+nav ul a {
+  color: white;
+}
+.logo img {
+  width: 70px;
+}
+
+/******************* GENERAL *********************/
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-family: "veneer-two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  padding: 10px;
+  padding-left: 10%;
+}
+h2 {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+p {
+  padding: 10px;
+  padding-left: 10%;
+}
+a {
+  color: black;
+}
+/********************** NEWS ************************/
+.news {
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 0%;
+  display: grid;
+  gap: 15%;
+}
+.new1 {
+  background-color: #e0e5db;
+}
+.new2 {
+  background-color: #e0e5db;
+}
+.follow {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: grid;
+  text-align: center;
+}
+.follow h2 {
+  padding-bottom: 8%;
+}
+
+/******************* BOOKINGS *********************/
+.booktext {
+  font-size: 200%;
+}
+.booktext p {
+  color: #ee8012;
+}
+
+/******************* MERCH *********************/
+.grid_1_1 {
+  background-image: url(backgroundimage.png);
+}
+.merchtext {
+  padding-top: 5%;
+  padding-left: 15%;
+  font-size: larger;
+}
+.merchtext p {
+  color: red;
+}
+/******************* LISTEN *********************/
+.streamservices {
+  font-size: 25px;
+}
+.pic1 a {
+  font-size: 120%;
+  text-decoration: double;
+  text-transform: uppercase;
+}
+
+/******************* HOME *********************/
+.pic1 {
+  position: relative;
+}
+.overlaytext {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.pic1:hover .overlaytext {
+  opacity: 1;
+}

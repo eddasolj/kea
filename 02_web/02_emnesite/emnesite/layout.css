@@ -1,0 +1,116 @@
+main {
+  margin: 0 auto;
+}
+
+/********************** MERCH ************************/
+
+.merch {
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 20%;
+  display: grid;
+  gap: 60px;
+}
+@media (min-width: 800px) {
+  .merch {
+    display: flex;
+    gap: 30px;
+    padding-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+/********************** LISTEN ************************/
+
+.listen {
+  background-image: url(4.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.streamservices {
+  max-height: 100%;
+  position: absolute;
+  top: 55%;
+  left: 35%;
+}
+@media (min-width: 800px) {
+  .listen {
+    min-height: 160vh;
+    max-width: 670px;
+    background-image: url(4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 400px;
+  }
+
+  .streamservices {
+    max-height: 100%;
+    position: absolute;
+    top: 53%;
+    left: 45%;
+  }
+}
+
+/********************** BOOKINGS ************************/
+
+.book {
+  padding: 3%;
+}
+@media (min-width: 800px) {
+  .book {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1%;
+  }
+  .bookpic {
+    grid-column: 1 / span 2;
+  }
+  .booktext {
+    grid-column: 3;
+  }
+}
+/********************** NEWS ************************/
+@media (min-width: 800px) {
+  .follow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .news {
+    padding-bottom: 8%;
+  }
+  .follow {
+    gap: 3%;
+  }
+}
+
+/********************** HOME ************************/
+
+.grid_1_1 {
+  padding-top: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 20%;
+  display: grid;
+  gap: 60px;
+}
+
+@media (min-width: 800px) {
+  .grid_1_1 {
+    display: flex;
+    gap: 30px;
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
+@media (min-width: 800px) {
+  .text1 {
+    padding-top: 70px;
+  }
+}

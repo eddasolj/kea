@@ -1,0 +1,123 @@
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/******************* FORSIDE *********************/
+.grid_2-1 {
+  padding-bottom: 40px;
+}
+
+@media (min-width: 800px) {
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+  }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+  }
+  .colorder {
+    order: -1;
+  }
+  img {
+    align-self: stretch;
+    object-fit: cover;
+  }
+}
+/******************* OPERATIVSYSTEMER *********************/
+
+@media (min-width: 800px) {
+  .grid_5-3 {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    gap: 20px;
+  }
+  .grid_2-3 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 20px;
+    padding-bottom: 60px;
+  }
+  .grid_3-2 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+  }
+  .order {
+    order: 1;
+  }
+}
+/******************* KOMPONENTER *********************/
+
+@media (min-width: 800px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+  }
+  .flex_col {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex_col > :last-child {
+    margin-top: auto;
+  }
+  img {
+    align-self: stretch;
+    object-fit: cover;
+  }
+  h2 {
+    padding-top: 20px;
+  }
+}
+
+/******************* GALLERI *********************/
+
+.img5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 800px) {
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .col4 {
+    max-width: 65ch;
+    padding-bottom: 50px;
+  }
+  .img5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 3 / span 2;
+    grid-row: 1;
+    gap: 10px;
+  }
+  img {
+    align-self: stretch;
+    object-fit: cover;
+    padding-bottom: 0%;
+    padding-top: 0%;
+  }
+  .mobile-image3 {
+    grid-column: 2 / span 3;
+    grid-row: 3;
+  }
+  .mobile-image2 {
+    grid-column: 3 / span 2;
+    grid-row: 2;
+  }
+  .mobile-image4 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .mobile-image1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+}

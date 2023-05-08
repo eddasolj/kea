@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.grid_2col_1-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+@media (min-width: 750px) {
+  .grid_2col_2-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .order {
+    order: -1;
+  }
+}
