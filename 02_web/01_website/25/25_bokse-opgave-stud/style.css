@@ -185,7 +185,7 @@
 
 .box16 .content {
   /*Her indsættes gradient vha. background-image*/
-  background-image: repeating-radial-gradient(#291313, #9f2525, #fff);
+  background-image: repeating-radial-gradient(#fffafa, #fefdff, #fff);
 }
 
 /*-------------------------------boks 17--------------------------------*/

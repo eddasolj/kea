@@ -1,0 +1,10 @@
+html {
+  --primarly: #ff2291;
+  --secondary: #500ca5;
+}
+h1 {
+  color: var(--primarly);
+}
+p {
+  color: var(--secondary);
+}
